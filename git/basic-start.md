@@ -32,6 +32,12 @@ vim 파일명.txt
 파일을 만든다.
 
 - vim : 명령어 시스템에 설치되어 있는 에디터.
+- vim이 아닌 다른 에디터가 실행되면,
+
+```
+git config --global core.editor "vim"
+```
+을 사용하여 설정해준다.
 
 vim 에디터에서 i를 누르면 insert 모드로 변경되고, 입력이 가능해진다.
 입력 완료 후 esc를 눌러 insert 모드를 종료하고, : 입력 후 wq를 누르면 저장 후 파일을 빠져나온다.
@@ -53,4 +59,18 @@ git add 파일명.txt
 ```
 git에게 추적을 명령한다.
 
+```
+git config --global user.name "자신의 이름"
+git config --global user.email "자신의 이메일"
+```
+최초에만 설정해주면 된다. 작성자의 정보를 입력.
 
+```
+git commit
+```
+버전을 생성한다. 버전의 메세지를 입력하는 위치가 나오면 insert 모드로 변경 후 설명을 입력한다.
+
+```
+git log
+```
+현재의 버전 정보를 본다.
